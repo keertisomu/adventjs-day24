@@ -1,17 +1,22 @@
 import { useState } from 'react'
 import './App.css'
+import AddExpense from './AddExpense'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [expenses, setExpenses] = useState([]);
+
+  const addExpense = (expense) => {
+    setExpenses([...expenses, expense]);
+    console.log('Expenses:', expenses);
+  };
 
   return (
     <>
     <div>     
       <div className='panel'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>        
-      </div>      
+        <h2>Expense Tracker</h2>
+       <AddExpense addExpense={addExpense}/>       
+      </div>
       </div>
     </>
   )
