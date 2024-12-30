@@ -1,7 +1,8 @@
 .add-expense {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .add-expense div {
@@ -18,6 +19,19 @@
     font-weight: bold;
 }
 
-.add-expense input {
-    width: 100%;
+.add-expense input {    
+    background-color: #F7F7F7;
+    border: 1px solid #D7D7D7;
+    padding: 8px;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 500; /* Medium */
+
+}
+
+.add-expense button {
+    background-color: transparent;
+    border: none;
+    padding-top: 25px;    
+    margin-left: -12px;
 }

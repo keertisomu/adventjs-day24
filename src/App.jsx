@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import AddExpense from './AddExpense'
+import ExpenseList from './ExpenseList';
 
 function App() {
   const [expenses, setExpenses] = useState([]);
@@ -15,7 +16,9 @@ function App() {
     <div>     
       <div className='panel'>
         <h2>Expense Tracker</h2>
-       <AddExpense addExpense={addExpense}/>       
+       <AddExpense addExpense={addExpense}/>    
+       <hr className='divider' />  
+       <ExpenseList expenses={expenses} />
       </div>
       </div>
     </>

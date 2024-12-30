@@ -23,13 +23,14 @@ const AddExpense = ({addExpense}) => {
 
     return (        
         <form className='add-expense' onSubmit={handleSubmit}>
-            <div>
+            <div className='vendor'>
                 <label htmlFor="vendor">Vendor</label>
                 <input
                     type="text"
                     id="vendor"
                     value={vendor}
                     onChange={handleVendorChange}
+                    style={{ width: '250px', borderRadius: '5px' }}
                 />
             </div>
             <div>
@@ -39,6 +40,7 @@ const AddExpense = ({addExpense}) => {
                     id="amount"
                     value={amount}
                     onChange={handleAmountChange}
+                    style={{ width: '100px', borderRadius: '5px'}}
                 />
             </div>
             <button type="submit">

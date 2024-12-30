@@ -37,3 +37,10 @@ h2 {
   line-height: 24px;
   font-weight: medium;
 }
+
+.divider {
+  border: none;
+  border-top: 1px solid #D7D7D7; /* Subtle divider color */
+  margin: 16px 0; /* Spacing above and below the divider */  
+  width: 450px;
+}
