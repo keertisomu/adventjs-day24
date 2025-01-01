@@ -1,6 +1,7 @@
 .total-expense {
     display: flex;
     flex-direction: row;
+    gap: 11.75rem;
 
     span {
         font-size: 20px;

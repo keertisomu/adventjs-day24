@@ -4,7 +4,7 @@ import checkImage from './assets/check.svg';
 
 const AddExpense = ({addExpense}) => {
     const [vendor, setVendor] = useState('');
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState(null);
 
     const vendorInputRef = useRef(null);
 
@@ -19,12 +19,13 @@ const AddExpense = ({addExpense}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission logic here
-        console.log('Vendor:', vendor, 'Amount:', amount);
+        console.log('Vendor:', vendor, 'Amount:', amount);        
         addExpense({ vendor, amount });
 
         // Clear the form
         vendorInputRef.current.focus();  
         setVendor('');
+        setAmount(null);
     };
 
     return (        

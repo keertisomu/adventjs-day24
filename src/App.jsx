@@ -27,8 +27,10 @@ function App() {
             <>
               <hr className="divider-top" />
               <ExpenseList expenses={expenses} deleteExpense={deleteExpense}/>
+              <div className="footer">
               <hr className="divider-bottom" />
               <TotalExpense expenses={expenses} />
+              </div>
             </>
           )}
         </div>

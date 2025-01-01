@@ -17,7 +17,7 @@ body {
 .panel {  
   background-color: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 450px;
@@ -55,4 +55,8 @@ h2 {
   border-top: 1px solid #D7D7D7; /* Subtle divider color */
   margin: 16px 0; /* Spacing above and below the divider */  
   width: 450px;
+}
+
+.footer {
+  margin-top: 250px;
 }
