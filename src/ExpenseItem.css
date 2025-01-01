@@ -1,8 +1,28 @@
+/* ExpenseItem.css */
 .expense-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 100px 40px; /* Adjust these values as needed */
     align-items: center;
-    padding: 1rem;    
-    font-family: 'Roboto Mono', monospace;
+    padding: 0.5rem 0;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 500;
+} 
+
+.expense-item .vendor {
+    text-align: left;
+}
+
+.expense-item .amount {    
+    padding-right: 10rem;
+}
+
+.expense-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

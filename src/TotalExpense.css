@@ -1,0 +1,10 @@
+.total-expense {
+    display: flex;
+    flex-direction: row;
+
+    span {
+        font-size: 20px;
+        line-height: 21px;
+        font-weight: 500;
+    }
+}

@@ -21,9 +21,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 450px;
-  height: 450px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;  
+}
+
+.panel.expanded {
+  height: 600px;
 }
 
 
@@ -38,7 +42,15 @@ h2 {
   font-weight: medium;
 }
 
-.divider {
+.divider-top {
+  border: none;
+  border-top: 1px solid #D7D7D7; /* Subtle divider color */
+  margin: 16px 0; /* Spacing above and below the divider */  
+  width: 450px;
+}
+
+.divider-bottom {
+  margin-top: 300px;
   border: none;
   border-top: 1px solid #D7D7D7; /* Subtle divider color */
   margin: 16px 0; /* Spacing above and below the divider */  

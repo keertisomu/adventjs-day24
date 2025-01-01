@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './AddExpense.css';
 import checkImage from './assets/check.svg';
 
 const AddExpense = ({addExpense}) => {
     const [vendor, setVendor] = useState('');
     const [amount, setAmount] = useState(0);
+
+    const vendorInputRef = useRef(null);
 
     const handleVendorChange = (e) => {
         setVendor(e.target.value);
@@ -19,6 +21,10 @@ const AddExpense = ({addExpense}) => {
         // Handle form submission logic here
         console.log('Vendor:', vendor, 'Amount:', amount);
         addExpense({ vendor, amount });
+
+        // Clear the form
+        vendorInputRef.current.focus();  
+        setVendor('');
     };
 
     return (        
@@ -28,6 +34,7 @@ const AddExpense = ({addExpense}) => {
                 <input
                     type="text"
                     id="vendor"
+                    ref={vendorInputRef}
                     value={vendor}
                     onChange={handleVendorChange}
                     style={{ width: '250px', borderRadius: '5px' }}
